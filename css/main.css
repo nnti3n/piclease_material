@@ -23,6 +23,14 @@ body {
 	.container.container--large-fixed {
 		width: 90% !important;
 	}
+
+	.brand-logo {
+		margin-left: 20px;
+	}
+
+	.Filter .Filter-shop {
+		text-align: right; 
+	}
 }
 
 ul.side-nav.fixed li.logo:hover, ul.side-nav.fixed li.logo #logo-container:hover {
