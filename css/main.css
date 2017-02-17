@@ -17,7 +17,7 @@ body {
 	}
 
 	.card img {
-		height: 160px !important;
+		height: 200px !important;
 	}
 
 	.container.container--large-fixed {
@@ -87,7 +87,7 @@ ul.side-nav.fixed li {
 }
 
 .Title {
-	margin-top: 315px;
+	margin-top: 300px;
 }
 
 .Title ul {
@@ -118,7 +118,7 @@ ul.side-nav.fixed li {
 }
 
 .Filter {
-	margin-top: 20px;
+	margin: 20px 10px 40px 10px;
 }
 
 .Icon--inline {
@@ -134,9 +134,10 @@ ul.side-nav.fixed li {
 }
 
 .card--fixed {
-	width: 240px !important;
+	width: 295px !important;
 	display: inline-block;
     margin: 10px 5px;
+    text-align: left;
 }
 
 .card--fixed p {
@@ -145,4 +146,9 @@ ul.side-nav.fixed li {
 
 .row--center {
 	text-align: center;
+}
+
+.side-nav a {
+    height: 35px;
+    line-height: 33px;
 }
