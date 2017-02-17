@@ -1,6 +1,27 @@
+body {
+    background-color: #fcfcfc;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: black;
+}	
+
+[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #03a9f4 !important;
+    background-color: #03a9f4 !important;
+}
+
 @media screen and (min-width: 993px) {
 	header, main, footer {
 	    padding-left: 300px;
+	}
+
+	.card img {
+		height: 160px !important;
+	}
+
+	.container.container--large-fixed {
+		width: 90% !important;
 	}
 }
 
@@ -31,6 +52,7 @@ ul.side-nav.fixed li.logo {
     width: 100%;
     height: 45px;
     margin: 0;
+    padding-left: 15px;
     border: 0;
 }
 
@@ -55,10 +77,6 @@ ul.side-nav.fixed li {
     line-height: 44px;
 }
 
-.card img {
-	height: 150px !important;
-}
-
 .Logo img {
 	padding-left: 6px;
 	padding-top: 2px;
@@ -69,11 +87,16 @@ ul.side-nav.fixed li {
 }
 
 .Title {
-	margin-top: 125px;
+	margin-top: 315px;
 }
 
 .Title ul {
 	border: none;
+}
+
+.Title a {
+    height: 35px !important;
+    line-height: 33px !important;
 }
 
 @media screen and (min-width: 769px) {
@@ -84,4 +107,42 @@ ul.side-nav.fixed li {
 
 .with-padding {
 	padding:0 10px !important;
+}
+
+.Footer--one {
+	padding-top: 0 !important;
+}
+
+.Footer--one a {
+	margin-right: 10px;
+}
+
+.Filter {
+	margin-top: 20px;
+}
+
+.Icon--inline {
+	vertical-align: middle;
+}
+
+.action-item {
+	margin-right: 5px !important;
+}
+
+.action-item img {
+    height: 23px !important;
+}
+
+.card--fixed {
+	width: 240px !important;
+	display: inline-block;
+    margin: 10px 5px;
+}
+
+.card--fixed p {
+	text-align: left;
+}
+
+.row--center {
+	text-align: center;
 }

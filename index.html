@@ -12,8 +12,8 @@
 
 <body>
 	<header>
-		<nav class="top-nav teal lighten-1">
-			<div class="nav-wrapper teal lighten-1">
+		<nav class="top-nav light-blue darken-1">
+			<div class="nav-wrapper light-blue darken-1">
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="#">Startseite</a></li>
@@ -22,11 +22,11 @@
 					<li><a href="#">Info</a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
-			        <li><a href="#">Startseite</a></li>
+					<li><a href="#">Startseite</a></li>
 					<li><a href="#">Bildsuche</a></li>
 					<li><a href="#">Warenkorb</a></li>
 					<li><a href="#">Info</a></li>
-		      	</ul>
+				</ul>
 
 			</div>
 		</nav>
@@ -39,20 +39,28 @@
 				<div class="search-wrapper card">
 					<input id="search"><i class="material-icons">search</i>
 				</div>
+				<a class="text-light-blue" href="#"><b>erweiterte Suche &nbsp <i class="material-icons Icon--inline orange-text accent-2-text">info</i></b></a>
+				<a class="text-light-blue" href="#"><b>Suche zurücksetzen &nbsp X</b></a>
+				<p style="padding-left:50px; margin: 0; ">
+					<input type="checkbox" id="check1" class="filled-in" id="filled-in-box" />
+					<label for="check1" style="color: black">nur Bilderflat</label>
+				</p>
+				<a href="#" class="orange-text accent-2-text">Alle Bilder ( 153139 )</a>
+				<a class="orange-text accent-2-text" style="padding-left: 15px;">0 Bilder gefunden</a>
 			</li>
 			<li class="Title">
 				<ul class="collection with-header with-padding">
 					<li class="collection-header bold"><h5>In den Rubriken</h4></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Nationalparke</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Best of...</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Säugetiere</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Fledermäuse</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Vögel</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Amphibien und Reptilien</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Insekten</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Schmetterlinge</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Käfer</a></li>
-					<li><a href="about.html" class="waves-effect waves-teal">Haustiere und Nutztiere</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Nationalparke</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Best of...</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Säugetiere</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Fledermäuse</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Vögel</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Amphibien und Reptilien</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Insekten</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Schmetterlinge</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Käfer</a></li>
+					<li><a href="#" class="waves-effect waves-light-blue">Haustiere und Nutztiere</a></li>
 				</ul>
 			</li>
 
@@ -60,33 +68,54 @@
 	</header>
 
 	<main>
-		<div class="container">
-		<ul class="pagination pagination--center">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-  </ul>
-			<div class="row">
+		<div class="container container--large-fixed">
 
-				<div class="col s3">
-					<div class="card">
-						<div class="card-image ">
+			<div class="Filter row">
+				<div class="input-field col s12 m4 l4" style="margin-top: 0;">
+					<select>
+						<option value="" disabled selected>Filter</option>
+						<option value="1">3 x 2 (6 Bilder/Seite)</option>
+						<option value="2">3 x 5 (15 Bilder/Seite)</option>
+						<option value="3">3 x 8 (24 Bilder/Seite)</option>
+					</select>
+				</div>
+				<div class="col s12 m3 l3">
+					<p class="light-blue-text">0 Bilder im Warenkorb</p>
+				</div>
+				<div class="col s12 m5 l5 right">
+					<a href="#" style="color: black;"><p class="right">Hier geht es zum Leuchttisch / Warenkorb ! <i class="material-icons light-blue-text Icon--inline">shopping_cart</i></p></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<ul class="pagination pagination--center">
+					<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+					<li class="active light-blue"><a href="#!">1</a></li>
+					<li class="waves-effect"><a href="#!">2</a></li>
+					<li class="waves-effect"><a href="#!">3</a></li>
+					<li class="waves-effect"><a href="#!">4</a></li>
+					<li class="waves-effect"><a href="#!">5</a></li>
+					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
+			</div>
+
+			<div class="row row--center">
+
+					<div class="card card--fixed">
+						<div class="card-image">
 							<img src="img/sample/sample-1.jpg">
 						</div>
 						<div class="card-content">
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-2.jpg">
 						</div>
@@ -94,12 +123,13 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-3.jpg">
 						</div>
@@ -107,12 +137,27 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
+						<div class="card-image">
+							<img src="img/sample/sample-3.jpg">
+						</div>
+						<div class="card-content">
+							<p>5352</p>
+						</div>
+						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
+							<a href="#"><i class="material-icons right">shopping_cart</i></a>
+						</div>
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-4.jpg">
 						</div>
@@ -120,29 +165,27 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-
-			</div>
-			<div class="row">
-
-				<div class="col s3">
-					<div class="card">
-						<div class="card-image ">
+					</div><div class="card card--fixed">
+						<div class="card-image">
 							<img src="img/sample/sample-1.jpg">
 						</div>
 						<div class="card-content">
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-2.jpg">
 						</div>
@@ -150,12 +193,13 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-3.jpg">
 						</div>
@@ -163,12 +207,13 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-4.jpg">
 						</div>
@@ -176,29 +221,27 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-
-			</div>
-			<div class="row">
-
-				<div class="col s3">
-					<div class="card">
-						<div class="card-image ">
+					</div><div class="card card--fixed">
+						<div class="card-image">
 							<img src="img/sample/sample-1.jpg">
 						</div>
 						<div class="card-content">
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-2.jpg">
 						</div>
@@ -206,12 +249,13 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
+					</div><div class="card card--fixed">
 						<div class="card-image">
 							<img src="img/sample/sample-3.jpg">
 						</div>
@@ -219,64 +263,43 @@
 							<p>5352</p>
 						</div>
 						<div class="card-action">
+							<a class="action-item" href="#"><i class="material-icons orange-text accent-2-text">info</i></a>
+							<a class="action-item" href="#"><i class="material-icons grey-text">star</i></a>
+							<a class="action-item" href="#"><img style="padding-bottom:2px;" src="img/card/f.gif"></a>
+							<a class="action-item" href="#"><img src="img/card/s.gif"></a>
 							<a href="#"><i class="material-icons right">shopping_cart</i></a>
 						</div>
-					</div>	
-				</div>
-				<div class="col s3">
-					<div class="card">
-						<div class="card-image">
-							<img src="img/sample/sample-4.jpg">
-						</div>
-						<div class="card-content">
-							<p>5352</p>
-						</div>
-						<div class="card-action">
-							<a href="#"><i class="material-icons right">shopping_cart</i></a>
-						</div>
-					</div>	
+					</div>
 				</div>
 
-<ul class="pagination pagination--center">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-  </ul>
 			</div>
+
+			<div class="row">
+				<ul class="pagination pagination--center">
+					<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+					<li class="active light-blue"><a href="#!">1</a></li>
+					<li class="waves-effect"><a href="#!">2</a></li>
+					<li class="waves-effect"><a href="#!">3</a></li>
+					<li class="waves-effect"><a href="#!">4</a></li>
+					<li class="waves-effect"><a href="#!">5</a></li>
+					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
+			</div>
+
 		</div>
 	</main>
 
-	 <footer class="page-footer teal lighten-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Piclease</h5>
-                <p class="grey-text text-lighten-4">Die Naturbildagentur</p>
-                <p class="grey-text text-lighten-4">E-Mail:info@piclease.com</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Site</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">piclease</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Haftungsausschluss</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Datenschutz</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">AGB</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Copyright
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+	<footer class="page-footer light-blue lighten-1 Footer--one">
+		<div class="footer-copyright">
+			<div class="container">
+				<a class="grey-text text-lighten-4" href="#!">piclease</a>
+				<a class="grey-text text-lighten-4" href="#!">Impressum</a>
+				<a class="grey-text text-lighten-4" href="#!">Haftungsausschluss</a>
+				<a class="grey-text text-lighten-4" href="#!">Datenschutz</a>
+				<a class="grey-text text-lighten-4" href="#!">AGB</a>
+			</div>
+		</div>
+	</footer>
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
