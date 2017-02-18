@@ -157,6 +157,16 @@ ul.side-nav.fixed li {
 	padding: 10px 22px;
 }
 
+.card--fixed .card-image {
+	text-align:center;
+}
+
+.card--fixed .card-image img {
+	display: inline-block;
+	width: auto !important;
+	max-width: 100%;
+}
+
 .row--center {
 	text-align: center;
 }
